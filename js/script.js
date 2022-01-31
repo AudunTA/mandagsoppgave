@@ -66,13 +66,14 @@ emptyArray.sort(function (a, b) {
 });
 console.log(emptyArray);
 let number = 3;
+let year = 2022;
 const length = emptyArray.length;
 console.log(length);
 const arrayLenght = length-number;
 const container = document.querySelector(".container");
 for(let i= 0; i < 3; i++) {
     console.log(arrayLenght+i);
-    container.innerHTML += `<div> <h4> navn: ${emptyArray[arrayLenght+i].firstName} ${emptyArray[arrayLenght+i].lastName}</h4> <p> sammenlagt score: ${emptyArray[arrayLenght+i].scores}</div>`;
+    container.innerHTML += `<div> <h2> navn: ${emptyArray[arrayLenght+i].firstName} ${emptyArray[arrayLenght+i].lastName}</h2><h4>alder:${year -emptyArray[arrayLenght+i].birthYear}</h4>  <p> sammenlagt score: ${emptyArray[arrayLenght+i].scores}</div>`;
 }
 
 //   Bruk listen av objekter til å oppdatere nettsiden med hvem som har vunnet sammenlagt i verdenscuppen i solo-rumpeldunk. Gjennomsnittet av scores gir sammenlagt seier. Du må selv lage fornuftig HTML, og supplimentere med JavaScript. De tre beste sammenlagt skal vises på siden. Ranking, sammenlagt score, beste score, fult navn og alder skal vises. Hvordan dette vises er opp til deg.
